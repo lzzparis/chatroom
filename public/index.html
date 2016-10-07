@@ -1,0 +1,30 @@
+<!doctype HTML>
+<title>Chatroom</title>
+<meta charset="utf8">
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
+<style>
+  body{
+    text-align: center;
+    font-family:"Droid Serif",serif;
+    font-size:2.5rem;
+  }
+  h1{
+    margin:0.5rem 0 0 0;
+  }
+  input{
+    margin:0 0 0.5rem 0;
+    padding:0.25rem;
+    font-family:"Droid Serif",serif;
+    font-size:1.5rem;
+  }
+
+</style>
+<!-- JS -->
+<script src="//code.jquery.com/jquery-2.1.0.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script> 
+
+<h1 id="nametag"></h1>
+
+<input type="text" focus>
+<div id="messages"></div>
