@@ -16,13 +16,11 @@ io.on("connection", function(socket){
   //called every time a client connects
   console.log("Client connected");
 
-  socket.on("name", function(name){
-    var announcement = name+" just joined";
-    io.emit("message", announcement);
+  socket.on("entry", function(name){
+    io.emit("entry", name);
   });
 
   socket.on("message", function(message){
-    console.log("Message received:", message);
     socket.broadcast.emit("message",message);
   });
 });
